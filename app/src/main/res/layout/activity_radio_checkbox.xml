@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioCheckbox"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="live preview of editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your name"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_gravity="center"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_margin="10dp"
+        android:text="gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="male"/>
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="female"/>
+        <RadioButton
+            android:id="@+id/trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trans"/>
+        <RadioButton
+            android:id="@+id/bisexual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bisexual"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"/>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="language"/>
+        <CheckBox
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="english"/>
+        <CheckBox
+            android:id="@+id/hausa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hausa"/>
+        <CheckBox
+            android:id="@+id/yoruba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yoruba"/>
+        <CheckBox
+            android:id="@+id/igbo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="igbo"/>
+        <CheckBox
+            android:id="@+id/spanish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="spanish"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="submit" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:text="next (recycler)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="result"
+        android:layout_gravity="center"
+        android:id="@+id/results"/>
+
+
+
+</LinearLayout>
